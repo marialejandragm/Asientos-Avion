@@ -1,0 +1,77 @@
+//PROYECTO AVION
+//FASE 2: PRIMERA PRUEBA DE LA MATRIZ
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main (void){
+	float reserva[10];
+	int i;
+	int opcion=0, uno=0, dos=0, vuelo=0;
+	printf("\nBienvenido al MIALv001!\n");
+	printf("\n\n");
+        
+        printf("En que puedo ayudarle?\n");
+        printf("\n\n");
+        printf("Ingrese el numero de vuelo:\n");
+        scanf("%d", &vuelo);
+		printf("VUELO: MIAL%d\n\n", vuelo);
+	do{
+		void clearscreen()
+{
+    system("@cls||clear");
+}
+        
+		printf("\nMENU DE OPCIONES\n\n");
+		printf("\n\n");
+		printf("VUELO: MIAL%d\n\n", vuelo);
+		printf("\n\n");
+        printf("1. Reservar su asiento\n");
+        printf("2. Ver asientos disponibles\n");
+        //printf("3. Ver sugerencia de asientos\n");
+        printf("3. Ver resumen\n");
+        printf("4. Salir\n");
+        printf("\n\n");
+        
+    printf("Ingrese una opcion\n");
+        scanf("%d", &opcion);
+        switch (opcion){
+        	case 1:
+{
+    system("@cls||clear");
+}
+    int matriz_1[6][6] = {0};
+    int i,j;				   
+   
+	for(i=0; i<6; i++){
+		for(j=0; j<6 ; j++){
+			printf("%d ", matriz_1[i][j]);
+			}
+		printf("\n");
+    } 
+
+            break;
+            
+            
+            case 2:
+{
+    system("@cls||clear");
+}
+            
+            
+        	case 3:
+{
+    system("@cls||clear");
+}
+            
+            
+            case 4:
+            	break;
+            
+		} 
+        
+	}while (opcion !=4);
+		return 0;
+	 
+	 
+}
