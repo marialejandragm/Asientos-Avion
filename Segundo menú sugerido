@@ -1,0 +1,64 @@
+
+//PROYECTO AVION
+//El nuevo menú que pensamos para hacer más dinámico el código. Es más sencillo de esta manera.
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int matriz_reservados[6][6];
+char letras[6] = {'A', 'B', 'C', 'D', 'E'};
+char asiento[2] = "";
+int fila, columna;
+int b;
+int contador=0;
+void asientos_disponibles(int matriz_asientos[6][6]);
+void reservar_asiento(int matriz_asientos[6][6], char *letras[6]);
+void clsc(void);
+
+int main(void){
+    int i,j;
+    for(i=0; i<6; i++){
+        for(j=0; j<6; j++){
+            matriz_reservados[i][j] = 0;
+        }
+    }
+    char n_vuelo[5];
+    int opcion;
+    start:
+        printf("Bienvenido!");
+        printf("Ingrese el numero de vuelo: ");
+        scanf("%s", &n_vuelo);
+        if(strlen(n_vuelo) == 5){
+            menu: 
+                
+                if(opcion == 1){
+                    
+                        if(asiento == "0"){
+                            goto menu;
+                        }
+                        if(strlen(asiento) == 2){
+                           
+                            } else {
+                            goto reserva;
+                        }
+                        
+                } else if(opcion == 2){
+                    
+                        goto menu;
+                } else if(opcion == 3){
+                    
+                        goto menu;
+                } else if(opcion == 4){
+                    return 0;
+                } else {
+                    goto menu;
+                }
+        } else {
+            goto start;
+        }
+    
+}
+
+void clsc(void){
+    system("@cls||clear");
+}
